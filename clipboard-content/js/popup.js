@@ -31,9 +31,10 @@ function getClipboardText() {
 
     // remove the temporary element
     insertionElement.removeChild(pasteDiv);
+    var html = $.parseHTML(clipboardText);
 
     // return the text
-    return clipboardText;
+    return $(html).text();
 }
 
 function Load()
@@ -56,7 +57,6 @@ var gSite;
 var URL = "/savenote.php";
 
 function Save(){
-  //console.log($('#summernote').summernote('code') + "\n" + $("#txtTags").val());
   $.ajax({
     "url": gSite + URL,
     "type" : "POST",
@@ -80,5 +80,6 @@ function Save(){
 $(document).ready(function(){
   Load();
   $("#btnSend").click(Save);
-  $('#summernote').html(getClipboardText());
+  var text = getClipboardText();
+  $('#summernote').summernote('code', text);
 });

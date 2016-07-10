@@ -14,31 +14,30 @@
 </head>
 <body>
     <div class="container">
-        <h1>Server information for note</h1>
+        <div class="text-center">
+          <img src="img/logo.png" alt="" style="width: 800px; height: 100%"/>
+        </div>
         <div class="panel panel-default">
-            <div class="panel-heading">Login information</div>
+            <div class="panel-heading">Connexion à votre Swipe Files CopySmart</div>
             <form class="form-horizontal" role="form" style="margin-top: 20px;">
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="txtUsername">Username:</label>
+                    <label class="control-label col-sm-2" for="txtUsername">Identifiant:</label>
                     <div class="col-sm-9">
-                        <input class="form-control" id="txtUsername" placeholder="Enter username">
+                        <input class="form-control" id="txtUsername" placeholder="Identifiant">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="txtPassword">Password:</label>
+                    <label class="control-label col-sm-2" for="txtPassword">Mot de passe:</label>
                     <div class="col-sm-9">
-                        <input type="password" class="form-control" id="txtPassword" placeholder="Enter password">
+                        <input type="password" class="form-control" id="txtPassword" placeholder="Mot de passe">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="txtSite">Site url</label>
-                    <div class="col-sm-9">
-                        <input type="text" class="form-control" id="txtSite" placeholder="Site url">
-                    </div>
-                </div>
+
+                <span class="hidden" id="txtSite" >http://smartnote.io</span>
+
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button class="btn btn-primary" id="btnSave">Save</button>
+                        <button class="btn btn-primary" id="btnSave">Enregistrer</button>
                     </div>
                 </div>
             </form>
@@ -49,7 +48,7 @@
         <div class="hidden col-sm-10" id="divInfo" >
           <div class="alert alert-success fade in">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong>Success!</strong> Information saved!
+            <strong>Succéder!</strong>Informations sauvegardées!
           </div>
         </div>
     </div><!--Container-->

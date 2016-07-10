@@ -1,0 +1,33 @@
+1 - change the .ico logo ( no "C", but "CS" if you can ) 
+==> DONE. Change to a clipboard icon
+
+2 - when user clic right, change text " send to my site " by : " Envoyer vers CopySmart "
+==> DONE
+
+3 - follow the instruction in screenshot :
+==> DONE
+1. Add logo CopySmart
+2. Change texxt off content collected from clipboard to "Contenu de votre note
+3. Add text to say people seperate tag word by comma
+4. Change text button to Envoyers vers CopySmart
+5. Add a link to CopySmart.io
+
+
+4 - When user clic right on the ico extension, change text by : 
+
+Clipboard coiper > CopySmart Swipe Files
+Send to my site > Envoyer vers CopySmart
+==>DONE
+
+5 - when user clic on option, change text " Server information for note " for " Connexion à votre Swipe Files CopySmart
+
+Username > Identifiant
+Password > Mot de passe
+
+save > Enregistrer
+
+6 - hidden the field "site url" , but directly put: app.copysmart.io
+( user only put username and password directly, more good. )
+From:
+mathieu girard
+done.

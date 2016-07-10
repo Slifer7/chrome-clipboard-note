@@ -48,7 +48,7 @@ function ctxMenu_Click(){
 chrome.browserAction.onClicked.addListener(browserAction_Click);
 chrome.runtime.onInstalled.addListener(function() {
     chrome.contextMenus.create({
-        title: 'Send to my site',
+        title: 'Envoyer vers CopySmart',
         id: 'menu1', // you'll use this in the handler function to identify this context menu item
         contexts: ['all'],
     });

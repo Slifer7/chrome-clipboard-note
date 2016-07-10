@@ -1,5 +1,5 @@
 {
-  "name": "Clipboard Copier",
+  "name": "CopySmart Swipe Files",
   "description": "Get data from clipboard",
   "version": "2.0",
   "permissions": [
@@ -10,13 +10,15 @@
     "storage",
     "contextMenus"
   ],
+  "icons": {"16": "img/clipboard.png"},
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "browser_action": {
-    "default_title": "Auto fill my info",
-    "default_popup": "popup.html"
+    "default_title": "Envoyer vers CopySmart",
+    "default_popup": "popup.html",
+    "default_icon" : "img/clipboard.png"
   },
   "manifest_version": 2,
   "options_page": "options.html"

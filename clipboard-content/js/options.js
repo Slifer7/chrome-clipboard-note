@@ -3,7 +3,7 @@ function Load()
   chrome.storage.sync.get({
     username: "",
     password: "",
-    site: ""
+    site: "http://localhost/note"
   }, function(item){
       $("#txtUsername").val(item.username);
       $("#txtPassword").val(item.password);
@@ -17,7 +17,6 @@ function Save()
     var username = $("#txtUsername").val();
     var password = $("#txtPassword").val();
     var site = $("#txtSite").val();
-
     chrome.storage.sync.set({
        username: username,
        password: password,
@@ -32,6 +31,5 @@ function Save()
 
 $(document).ready(function(){
   $("#btnSave").click(Save);
-
   Load();
 });
