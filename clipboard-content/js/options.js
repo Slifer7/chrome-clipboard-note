@@ -3,7 +3,7 @@ function Load()
   chrome.storage.sync.get({
     username: "",
     password: "",
-    site: "http://localhost/note"
+    site: "http://app.copysmart.io"
   }, function(item){
       $("#txtUsername").val(item.username);
       $("#txtPassword").val(item.password);
