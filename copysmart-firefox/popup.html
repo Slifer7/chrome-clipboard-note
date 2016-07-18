@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/summernote.css" rel="stylesheet">
+  <link href="css/bootstrap-tagsinput.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="container" style="width: 800px;">
+  <div class="container" style=" width: 800px;">
+    <div class="text-center">
+      <img src="img/logo.png" alt="" style="width: 770px; height: 100%"/>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Contenu de votre note:</div>
+      <div class="panel-body">
+        <div class="col-sm-12">
+          <div id="summernote"></div>
+        </div>
+        <div class="col-sm-12 text-center" style="margin-bottom: 10px;">
+          Ajouter un ou plusieurs Tags (mot-cles) ci-dessous, pour organiser votre note
+        </div>
+        <div class="col-sm-12">
+          <div class="col-sm-2 text-center" style="padding-top: 6px;">
+            Tags:
+          </div>
+          <div class="col-sm-10">
+            <input type="text" style="width: 300px;" data-role="tagsinput" id="txtTags" />
+          </div>
+        </div>
+        <div class="col-sm-12" style="margin-top: 28px; margin-bottom: 30px;">
+          <div class="col-sm-6 " style="text-align: right;">
+            <button type="button" class="btn btn-primary" id="btnSend">Envoyer vers CopySmart</button>
+          </div>
+          <div class="col-sm-6">
+            Pas encore insrit? Visiter <a href="http://CopySmart.io">CopySmart.io</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/summernote.js"></script>
+  <script src="js/bootstrap-tagsinput.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
